@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+.wrapper {
+    width: 50vh;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: rgb(255, 238, 184);
+    height: 260px;
+    padding: 20px 60px;
+    font-family: 'Dancing Script', cursive;
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/1b/73/13/98/bar.jpg");
+    background-size: cover;
+    z-index: 0;
+    
+}
+/* h1 {
+    background-color: rgba(233, 233, 233, .1);
+} */
+.shadow {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .35);
+    z-index: -1;
+}
+h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+}
+.search {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 7px;
+    background-color: rgba(255, 238, 184, .5);
+    color: rgba(255, 238, 184, .9);
+}
+::placeholder {
+    color: black;
+}
+.drink-list {
+    padding: 20px 40px;
+}
+h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+ul {
+    padding-bottom: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+li {
+    padding-top: 5px;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(255, 238, 184, .8);
+}
+li:last-child {
+    border-bottom: 0;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-left: 5px; 
+    padding: 1px;
+    background-color:  rgba(255, 238, 184, .5);
+    border-radius: 5px;
+    border: 1px solid blanchedalmond;
+}
+button:hover {
+    cursor: pointer;
+}
+p {
+    padding: 10px 10px;
+    font-size: 10px;
+}
