@@ -31,9 +31,6 @@ body {
     z-index: 0;
     
 }
-/* h1 {
-    background-color: rgba(233, 233, 233, .1);
-} */
 .shadow {
     position: absolute;
     top: 0;
@@ -86,13 +83,13 @@ ul {
     list-style: none;
     font-size: 18px;
 }
-.listElement li {
+.listElement .text-element {
     cursor: pointer;
     margin-top: 5px;
     margin-left: 10px;
     border-bottom: 1px solid rgba(255, 238, 184, .8);
 }
-.listElement li:last-child {
+.listElement .text-element:last-child {
     border-bottom: 0;
 }
 .listElement .descText {
