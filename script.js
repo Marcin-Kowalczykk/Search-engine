@@ -10,7 +10,7 @@ const searchDrinks = () => {
     listElemArray.forEach(element => {
         if(element.textContent.toLowerCase().includes(text) === true) {
             element.style.display = 'block';
-            clearAllDescription();
+            clearAllProductDescription();
         }
         else {
             element.style.display = 'none'
