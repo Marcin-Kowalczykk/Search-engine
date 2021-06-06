@@ -1,11 +1,11 @@
 
 const input = document.querySelector(".search");
-const listElemArray = document.querySelectorAll("li");
+const listElemArray = document.querySelectorAll(".text-element");
 const btnMore = document.querySelector(".buttonMore");
 const btnLess = document.querySelector(".buttonLess");
 
 // searching drinks function
-const searching = () => {
+const searchDrinks = () => {
     const text = input.value.toLowerCase();
     listElemArray.forEach(element => {
         if(element.textContent.toLowerCase().includes(text) === true) {
@@ -18,7 +18,7 @@ const searching = () => {
     });
 }
 // event for searching input
-input.addEventListener("input", searching);
+input.addEventListener("input", searchDrinks);
 
 // functions for buttons
 const showDescriptionBtn = () => {
