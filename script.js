@@ -21,14 +21,14 @@ const searchDrinks = () => {
 input.addEventListener("input", searchDrinks);
 
 // functions for buttons
-const showDescriptionBtn = () => {
+const showProductDescriptionBtn = () => {
     listElemArray.forEach(element => {
         const liParentElement = element.parentElement;
         const displayText = liParentElement.classList.add('visibility');
         displayText;
     });
 }
-const clearAllDescription = () => {
+const clearAllProductDescription = () => {
     listElemArray.forEach(element => {
         const liParentElement = element.parentElement;
         const removeText = liParentElement.classList.remove('visibility');
@@ -36,17 +36,17 @@ const clearAllDescription = () => {
     });
 }
 // events for buttons
-btnMore.addEventListener('click', showDescriptionBtn);
-btnLess.addEventListener('click', clearAllDescription);
+btnMore.addEventListener('click', showProductDescriptionBtn);
+btnLess.addEventListener('click', clearAllProductDescription);
 
-//functions for showing text for each product 
-function showDescription() {
+//functions for showing description for each product 
+function showProductDescription() {
     const parent = this.parentElement;
     parent.classList.toggle('visibility');
 }
 
-// event for show Text for each product 
+// event for show description for each product 
 listElemArray.forEach(element => {
-    element.addEventListener('click', showDescription);
+    element.addEventListener('click', showProductDescription);
 });
 
