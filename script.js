@@ -1,4 +1,3 @@
-
 const input = document.querySelector(".search");
 const listElemArray = document.querySelectorAll(".text-element");
 const btnMore = document.querySelector(".buttonMore");
@@ -8,11 +7,10 @@ const btnLess = document.querySelector(".buttonLess");
 const searchDrinks = () => {
     const text = input.value.toLowerCase();
     listElemArray.forEach(element => {
-        if(element.textContent.toLowerCase().includes(text) === true) {
+        if (element.textContent.toLowerCase().includes(text) === true) {
             element.style.display = 'block';
             clearAllProductDescription();
-        }
-        else {
+        } else {
             element.style.display = 'none'
         }
     });
@@ -49,4 +47,3 @@ function showProductDescription() {
 listElemArray.forEach(element => {
     element.addEventListener('click', showProductDescription);
 });
-
